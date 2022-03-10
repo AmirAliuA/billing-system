@@ -15,7 +15,7 @@ namespace billing_system
             formUsers user = new formUsers();
             user.Show();
 
-            // Don't allow the formUsers form to open more than once
+            // Don't allow the formUsers to open more than once
             if (Application.OpenForms.OfType<formUsers>().Count() == 2)
                 Application.OpenForms.OfType<formUsers>().First().Close();
         }
@@ -30,6 +30,16 @@ namespace billing_system
         private void adminDashboard_Load(object sender, EventArgs e)
         {
             labelLoggedInUsername.Text = formLogin.loggedInUsername;
+        }
+
+        private void categoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formCategories categories = new formCategories();
+            categories.Show();
+
+            // Don't allow the formUsers to open more than once
+            if (Application.OpenForms.OfType<formCategories>().Count() == 2)
+                Application.OpenForms.OfType<formCategories>().First().Close();
         }
     }
 }

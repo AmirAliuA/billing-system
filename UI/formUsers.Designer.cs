@@ -279,7 +279,7 @@
             // dataGridViewUsers
             // 
             this.dataGridViewUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewUsers.Location = new System.Drawing.Point(365, 93);
+            this.dataGridViewUsers.Location = new System.Drawing.Point(365, 64);
             this.dataGridViewUsers.Name = "dataGridViewUsers";
             this.dataGridViewUsers.RowTemplate.Height = 25;
             this.dataGridViewUsers.Size = new System.Drawing.Size(423, 304);
@@ -288,7 +288,7 @@
             // 
             // textSearch
             // 
-            this.textSearch.Location = new System.Drawing.Point(428, 64);
+            this.textSearch.Location = new System.Drawing.Point(428, 385);
             this.textSearch.Name = "textSearch";
             this.textSearch.Size = new System.Drawing.Size(360, 23);
             this.textSearch.TabIndex = 26;
@@ -298,7 +298,7 @@
             // 
             this.labelSearch.AutoSize = true;
             this.labelSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelSearch.Location = new System.Drawing.Point(365, 62);
+            this.labelSearch.Location = new System.Drawing.Point(365, 383);
             this.labelSearch.Name = "labelSearch";
             this.labelSearch.Size = new System.Drawing.Size(57, 21);
             this.labelSearch.TabIndex = 25;
