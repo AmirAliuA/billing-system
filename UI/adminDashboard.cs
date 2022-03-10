@@ -14,6 +14,10 @@ namespace billing_system
         {
             formUsers user = new formUsers();
             user.Show();
+
+            // Don't allow the formUsers form to open more than once
+            if (Application.OpenForms.OfType<formUsers>().Count() == 2)
+                Application.OpenForms.OfType<formUsers>().First().Close();
         }
     }
 }
