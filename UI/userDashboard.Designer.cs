@@ -28,14 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(userDashboard));
             this.labelFooter = new System.Windows.Forms.Label();
             this.panelFooter = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.labelLoggedInUsername = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelFooter.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelFooter
@@ -89,21 +93,45 @@
             this.productsToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.productsToolStripMenuItem.Text = "Inventory";
             // 
+            // labelLoggedInUsername
+            // 
+            this.labelLoggedInUsername.AutoSize = true;
+            this.labelLoggedInUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelLoggedInUsername.Location = new System.Drawing.Point(684, 43);
+            this.labelLoggedInUsername.Name = "labelLoggedInUsername";
+            this.labelLoggedInUsername.Size = new System.Drawing.Size(88, 21);
+            this.labelLoggedInUsername.TabIndex = 4;
+            this.labelLoggedInUsername.Text = "Username";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(644, 39);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(34, 29);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // userDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.labelLoggedInUsername);
             this.Controls.Add(this.panelFooter);
             this.Controls.Add(this.menuStrip1);
             this.Name = "userDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.userDashboard_FormClosed);
+            this.Load += new System.EventHandler(this.userDashboard_Load);
             this.panelFooter.ResumeLayout(false);
             this.panelFooter.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,5 +145,7 @@
         private ToolStripMenuItem usersToolStripMenuItem;
         private ToolStripMenuItem categoryToolStripMenuItem;
         private ToolStripMenuItem productsToolStripMenuItem;
+        private Label labelLoggedInUsername;
+        private PictureBox pictureBox1;
     }
 }

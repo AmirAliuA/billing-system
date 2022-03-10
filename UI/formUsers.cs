@@ -35,7 +35,10 @@ namespace billing_system.UI
             u.address = textAddress.Text;
             u.user_type = comboBoxUserType.Text;
             u.added_date = DateTime.Now;
-            u.added_by = 1;
+
+            string loggedUser = formLogin.loggedInUsername;
+            userBLL usr = dal.GetIDFromUsername(loggedUser);
+            u.added_by = usr.id;
 
             // Inserting data in the database
             bool success = dal.Insert(u);
@@ -173,6 +176,11 @@ namespace billing_system.UI
                 DataTable dt = dal.Select();
                 dataGridViewUsers.DataSource = dt;
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

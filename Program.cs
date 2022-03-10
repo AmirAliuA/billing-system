@@ -1,3 +1,5 @@
+using billing_system.UI;
+
 namespace billing_system
 {
     internal static class Program
@@ -12,7 +14,8 @@ namespace billing_system
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             //Application.Run(new userDashboard()); 
-            Application.Run(new adminDashboard()); // test
+            //Application.Run(new adminDashboard());
+            Application.Run(new formLogin());
         }
     }
 }

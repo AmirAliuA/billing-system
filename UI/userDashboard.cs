@@ -1,4 +1,5 @@
-﻿using System;
+﻿using billing_system.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace billing_system
         public userDashboard()
         {
             InitializeComponent();
+        }
+
+        private void userDashboard_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            formLogin login = new formLogin();
+            login.Show();
+            this.Hide();
+        }
+
+        private void userDashboard_Load(object sender, EventArgs e)
+        {
+            labelLoggedInUsername.Text = formLogin.loggedInUsername;
         }
     }
 }

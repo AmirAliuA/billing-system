@@ -19,5 +19,17 @@ namespace billing_system
             if (Application.OpenForms.OfType<formUsers>().Count() == 2)
                 Application.OpenForms.OfType<formUsers>().First().Close();
         }
+
+        private void adminDashboard_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            formLogin login = new formLogin();
+            login.Show();
+            this.Hide();
+        }
+
+        private void adminDashboard_Load(object sender, EventArgs e)
+        {
+            labelLoggedInUsername.Text = formLogin.loggedInUsername;
+        }
     }
 }
