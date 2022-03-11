@@ -52,9 +52,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(762, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(767, 1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 30);
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -64,7 +65,7 @@
             this.labelCategories.AutoSize = true;
             this.labelCategories.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelCategories.ForeColor = System.Drawing.Color.White;
-            this.labelCategories.Location = new System.Drawing.Point(348, 17);
+            this.labelCategories.Location = new System.Drawing.Point(365, 16);
             this.labelCategories.Name = "labelCategories";
             this.labelCategories.Size = new System.Drawing.Size(118, 25);
             this.labelCategories.TabIndex = 1;
@@ -83,43 +84,47 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(238, 391);
+            this.buttonDelete.Location = new System.Drawing.Point(245, 375);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(114, 47);
             this.buttonDelete.TabIndex = 55;
             this.buttonDelete.Text = "DELETE";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(122, 391);
+            this.buttonUpdate.Location = new System.Drawing.Point(122, 375);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(110, 47);
+            this.buttonUpdate.Size = new System.Drawing.Size(117, 47);
             this.buttonUpdate.TabIndex = 54;
             this.buttonUpdate.Text = "UPDATE";
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(12, 391);
+            this.buttonAdd.Location = new System.Drawing.Point(12, 375);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(104, 47);
             this.buttonAdd.TabIndex = 53;
             this.buttonAdd.Text = "ADD";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // textSearchCategories
             // 
-            this.textSearchCategories.Location = new System.Drawing.Point(428, 99);
+            this.textSearchCategories.Location = new System.Drawing.Point(422, 74);
             this.textSearchCategories.Name = "textSearchCategories";
-            this.textSearchCategories.Size = new System.Drawing.Size(360, 23);
+            this.textSearchCategories.Size = new System.Drawing.Size(366, 23);
             this.textSearchCategories.TabIndex = 52;
+            this.textSearchCategories.TextChanged += new System.EventHandler(this.textSearchCategories_TextChanged);
             // 
             // labelSearch
             // 
             this.labelSearch.AutoSize = true;
             this.labelSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelSearch.Location = new System.Drawing.Point(365, 97);
+            this.labelSearch.Location = new System.Drawing.Point(359, 72);
             this.labelSearch.Name = "labelSearch";
             this.labelSearch.Size = new System.Drawing.Size(57, 21);
             this.labelSearch.TabIndex = 51;
@@ -128,25 +133,27 @@
             // dataGridViewCategories
             // 
             this.dataGridViewCategories.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCategories.Location = new System.Drawing.Point(365, 128);
+            this.dataGridViewCategories.Location = new System.Drawing.Point(365, 105);
             this.dataGridViewCategories.Name = "dataGridViewCategories";
             this.dataGridViewCategories.RowTemplate.Height = 25;
-            this.dataGridViewCategories.Size = new System.Drawing.Size(423, 310);
+            this.dataGridViewCategories.Size = new System.Drawing.Size(423, 319);
             this.dataGridViewCategories.TabIndex = 50;
+            this.dataGridViewCategories.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewCategories_RowHeaderMouseClick);
             // 
             // textCategoriesID
             // 
-            this.textCategoriesID.Location = new System.Drawing.Point(154, 99);
+            this.textCategoriesID.BackColor = System.Drawing.SystemColors.Window;
+            this.textCategoriesID.Location = new System.Drawing.Point(122, 74);
             this.textCategoriesID.Name = "textCategoriesID";
             this.textCategoriesID.ReadOnly = true;
-            this.textCategoriesID.Size = new System.Drawing.Size(147, 23);
+            this.textCategoriesID.Size = new System.Drawing.Size(205, 23);
             this.textCategoriesID.TabIndex = 49;
             // 
             // labelCategoryID
             // 
             this.labelCategoryID.AutoSize = true;
             this.labelCategoryID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelCategoryID.Location = new System.Drawing.Point(12, 97);
+            this.labelCategoryID.Location = new System.Drawing.Point(12, 74);
             this.labelCategoryID.Name = "labelCategoryID";
             this.labelCategoryID.Size = new System.Drawing.Size(92, 21);
             this.labelCategoryID.TabIndex = 48;
@@ -154,24 +161,24 @@
             // 
             // textCategoriesDescription
             // 
-            this.textCategoriesDescription.Location = new System.Drawing.Point(154, 211);
+            this.textCategoriesDescription.Location = new System.Drawing.Point(122, 132);
             this.textCategoriesDescription.Multiline = true;
             this.textCategoriesDescription.Name = "textCategoriesDescription";
-            this.textCategoriesDescription.Size = new System.Drawing.Size(147, 98);
+            this.textCategoriesDescription.Size = new System.Drawing.Size(205, 237);
             this.textCategoriesDescription.TabIndex = 38;
             // 
             // textTitleCategories
             // 
-            this.textTitleCategories.Location = new System.Drawing.Point(154, 154);
+            this.textTitleCategories.Location = new System.Drawing.Point(122, 103);
             this.textTitleCategories.Name = "textTitleCategories";
-            this.textTitleCategories.Size = new System.Drawing.Size(147, 23);
+            this.textTitleCategories.Size = new System.Drawing.Size(205, 23);
             this.textTitleCategories.TabIndex = 37;
             // 
             // labelDescription
             // 
             this.labelDescription.AutoSize = true;
             this.labelDescription.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelDescription.Location = new System.Drawing.Point(12, 211);
+            this.labelDescription.Location = new System.Drawing.Point(15, 132);
             this.labelDescription.Name = "labelDescription";
             this.labelDescription.Size = new System.Drawing.Size(89, 21);
             this.labelDescription.TabIndex = 31;
@@ -181,7 +188,7 @@
             // 
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelTitle.Location = new System.Drawing.Point(12, 152);
+            this.labelTitle.Location = new System.Drawing.Point(12, 103);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(39, 21);
             this.labelTitle.TabIndex = 30;
@@ -191,6 +198,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.panel1);
@@ -209,6 +217,7 @@
             this.Name = "formCategories";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formCategories";
+            this.Load += new System.EventHandler(this.formCategories_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

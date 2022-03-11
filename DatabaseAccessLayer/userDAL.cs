@@ -22,7 +22,7 @@ namespace billing_system.DatabaseAccessLayer
 
             try
             {
-                String sql = "SELECT * FROM table_users "; // we select our data from our database
+                String sql = "SELECT * FROM table_users"; // we select our data from our database
                 SqlCommand cmd = new SqlCommand(sql, conn); // execute the query
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd); // we get the data from our database
                 

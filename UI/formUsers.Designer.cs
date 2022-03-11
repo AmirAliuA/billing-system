@@ -77,9 +77,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(762, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(766, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 30);
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -89,7 +90,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(365, 9);
+            this.label1.Location = new System.Drawing.Point(365, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 25);
             this.label1.TabIndex = 1;
@@ -99,7 +100,7 @@
             // 
             this.labelFirstName.AutoSize = true;
             this.labelFirstName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelFirstName.Location = new System.Drawing.Point(12, 91);
+            this.labelFirstName.Location = new System.Drawing.Point(12, 105);
             this.labelFirstName.Name = "labelFirstName";
             this.labelFirstName.Size = new System.Drawing.Size(86, 21);
             this.labelFirstName.TabIndex = 1;
@@ -109,7 +110,7 @@
             // 
             this.labelLastName.AutoSize = true;
             this.labelLastName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelLastName.Location = new System.Drawing.Point(12, 122);
+            this.labelLastName.Location = new System.Drawing.Point(12, 134);
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(84, 21);
             this.labelLastName.TabIndex = 2;
@@ -119,7 +120,7 @@
             // 
             this.labelEmail.AutoSize = true;
             this.labelEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelEmail.Location = new System.Drawing.Point(12, 181);
+            this.labelEmail.Location = new System.Drawing.Point(12, 192);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(54, 21);
             this.labelEmail.TabIndex = 4;
@@ -129,7 +130,7 @@
             // 
             this.labelGender.AutoSize = true;
             this.labelGender.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelGender.Location = new System.Drawing.Point(12, 151);
+            this.labelGender.Location = new System.Drawing.Point(12, 163);
             this.labelGender.Name = "labelGender";
             this.labelGender.Size = new System.Drawing.Size(61, 21);
             this.labelGender.TabIndex = 5;
@@ -139,7 +140,7 @@
             // 
             this.labelPassword.AutoSize = true;
             this.labelPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelPassword.Location = new System.Drawing.Point(12, 241);
+            this.labelPassword.Location = new System.Drawing.Point(13, 250);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(76, 21);
             this.labelPassword.TabIndex = 6;
@@ -149,7 +150,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(13, 299);
+            this.label7.Location = new System.Drawing.Point(13, 308);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(66, 21);
             this.label7.TabIndex = 7;
@@ -159,7 +160,7 @@
             // 
             this.labelUsername.AutoSize = true;
             this.labelUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelUsername.Location = new System.Drawing.Point(12, 210);
+            this.labelUsername.Location = new System.Drawing.Point(12, 221);
             this.labelUsername.Name = "labelUsername";
             this.labelUsername.Size = new System.Drawing.Size(81, 21);
             this.labelUsername.TabIndex = 8;
@@ -167,60 +168,60 @@
             // 
             // textFirstName
             // 
-            this.textFirstName.Location = new System.Drawing.Point(154, 93);
+            this.textFirstName.Location = new System.Drawing.Point(122, 105);
             this.textFirstName.Name = "textFirstName";
-            this.textFirstName.Size = new System.Drawing.Size(147, 23);
+            this.textFirstName.Size = new System.Drawing.Size(205, 23);
             this.textFirstName.TabIndex = 9;
             // 
             // textLastName
             // 
-            this.textLastName.Location = new System.Drawing.Point(154, 122);
+            this.textLastName.Location = new System.Drawing.Point(122, 134);
             this.textLastName.Name = "textLastName";
-            this.textLastName.Size = new System.Drawing.Size(147, 23);
+            this.textLastName.Size = new System.Drawing.Size(205, 23);
             this.textLastName.TabIndex = 10;
             // 
             // textEMail
             // 
-            this.textEMail.Location = new System.Drawing.Point(154, 181);
+            this.textEMail.Location = new System.Drawing.Point(122, 192);
             this.textEMail.Name = "textEMail";
-            this.textEMail.Size = new System.Drawing.Size(147, 23);
+            this.textEMail.Size = new System.Drawing.Size(205, 23);
             this.textEMail.TabIndex = 11;
             // 
             // textAddress
             // 
-            this.textAddress.Location = new System.Drawing.Point(154, 297);
+            this.textAddress.Location = new System.Drawing.Point(122, 308);
             this.textAddress.Multiline = true;
             this.textAddress.Name = "textAddress";
-            this.textAddress.Size = new System.Drawing.Size(147, 69);
+            this.textAddress.Size = new System.Drawing.Size(205, 23);
             this.textAddress.TabIndex = 14;
             // 
             // textPassword
             // 
-            this.textPassword.Location = new System.Drawing.Point(154, 239);
+            this.textPassword.Location = new System.Drawing.Point(122, 250);
             this.textPassword.Name = "textPassword";
             this.textPassword.PasswordChar = '*';
-            this.textPassword.Size = new System.Drawing.Size(147, 23);
+            this.textPassword.Size = new System.Drawing.Size(205, 23);
             this.textPassword.TabIndex = 13;
             // 
             // textUsername
             // 
-            this.textUsername.Location = new System.Drawing.Point(154, 210);
+            this.textUsername.Location = new System.Drawing.Point(122, 221);
             this.textUsername.Name = "textUsername";
-            this.textUsername.Size = new System.Drawing.Size(147, 23);
+            this.textUsername.Size = new System.Drawing.Size(205, 23);
             this.textUsername.TabIndex = 12;
             // 
             // textContact
             // 
-            this.textContact.Location = new System.Drawing.Point(154, 268);
+            this.textContact.Location = new System.Drawing.Point(122, 279);
             this.textContact.Name = "textContact";
-            this.textContact.Size = new System.Drawing.Size(147, 23);
+            this.textContact.Size = new System.Drawing.Size(205, 23);
             this.textContact.TabIndex = 17;
             // 
             // labelContact
             // 
             this.labelContact.AutoSize = true;
             this.labelContact.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelContact.Location = new System.Drawing.Point(12, 268);
+            this.labelContact.Location = new System.Drawing.Point(12, 279);
             this.labelContact.Name = "labelContact";
             this.labelContact.Size = new System.Drawing.Size(63, 21);
             this.labelContact.TabIndex = 16;
@@ -232,9 +233,9 @@
             this.comboBoxGender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBoxGender.Location = new System.Drawing.Point(154, 151);
+            this.comboBoxGender.Location = new System.Drawing.Point(122, 163);
             this.comboBoxGender.Name = "comboBoxGender";
-            this.comboBoxGender.Size = new System.Drawing.Size(147, 23);
+            this.comboBoxGender.Size = new System.Drawing.Size(205, 23);
             this.comboBoxGender.TabIndex = 19;
             // 
             // comboBoxUserType
@@ -243,16 +244,16 @@
             this.comboBoxUserType.Items.AddRange(new object[] {
             "User",
             "Admin"});
-            this.comboBoxUserType.Location = new System.Drawing.Point(154, 374);
+            this.comboBoxUserType.Location = new System.Drawing.Point(122, 337);
             this.comboBoxUserType.Name = "comboBoxUserType";
-            this.comboBoxUserType.Size = new System.Drawing.Size(147, 23);
+            this.comboBoxUserType.Size = new System.Drawing.Size(205, 23);
             this.comboBoxUserType.TabIndex = 21;
             // 
             // labelUserType
             // 
             this.labelUserType.AutoSize = true;
             this.labelUserType.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelUserType.Location = new System.Drawing.Point(12, 374);
+            this.labelUserType.Location = new System.Drawing.Point(12, 337);
             this.labelUserType.Name = "labelUserType";
             this.labelUserType.Size = new System.Drawing.Size(78, 21);
             this.labelUserType.TabIndex = 20;
@@ -260,17 +261,17 @@
             // 
             // textUserID
             // 
-            this.textUserID.Location = new System.Drawing.Point(154, 64);
+            this.textUserID.Location = new System.Drawing.Point(122, 74);
             this.textUserID.Name = "textUserID";
             this.textUserID.ReadOnly = true;
-            this.textUserID.Size = new System.Drawing.Size(147, 23);
+            this.textUserID.Size = new System.Drawing.Size(205, 23);
             this.textUserID.TabIndex = 23;
             // 
             // labelUserID
             // 
             this.labelUserID.AutoSize = true;
             this.labelUserID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelUserID.Location = new System.Drawing.Point(12, 62);
+            this.labelUserID.Location = new System.Drawing.Point(12, 74);
             this.labelUserID.Name = "labelUserID";
             this.labelUserID.Size = new System.Drawing.Size(61, 21);
             this.labelUserID.TabIndex = 22;
@@ -279,18 +280,18 @@
             // dataGridViewUsers
             // 
             this.dataGridViewUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewUsers.Location = new System.Drawing.Point(365, 64);
+            this.dataGridViewUsers.Location = new System.Drawing.Point(365, 105);
             this.dataGridViewUsers.Name = "dataGridViewUsers";
             this.dataGridViewUsers.RowTemplate.Height = 25;
-            this.dataGridViewUsers.Size = new System.Drawing.Size(423, 304);
+            this.dataGridViewUsers.Size = new System.Drawing.Size(423, 315);
             this.dataGridViewUsers.TabIndex = 24;
             this.dataGridViewUsers.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewUsers_RowHeaderMouseClick);
             // 
             // textSearch
             // 
-            this.textSearch.Location = new System.Drawing.Point(428, 385);
+            this.textSearch.Location = new System.Drawing.Point(422, 74);
             this.textSearch.Name = "textSearch";
-            this.textSearch.Size = new System.Drawing.Size(360, 23);
+            this.textSearch.Size = new System.Drawing.Size(366, 23);
             this.textSearch.TabIndex = 26;
             this.textSearch.TextChanged += new System.EventHandler(this.textSearch_TextChanged);
             // 
@@ -298,7 +299,7 @@
             // 
             this.labelSearch.AutoSize = true;
             this.labelSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelSearch.Location = new System.Drawing.Point(365, 383);
+            this.labelSearch.Location = new System.Drawing.Point(359, 74);
             this.labelSearch.Name = "labelSearch";
             this.labelSearch.Size = new System.Drawing.Size(57, 21);
             this.labelSearch.TabIndex = 25;
@@ -306,9 +307,9 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(366, 414);
+            this.buttonAdd.Location = new System.Drawing.Point(13, 373);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(127, 47);
+            this.buttonAdd.Size = new System.Drawing.Size(103, 47);
             this.buttonAdd.TabIndex = 27;
             this.buttonAdd.Text = "ADD";
             this.buttonAdd.UseVisualStyleBackColor = true;
@@ -316,9 +317,9 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(499, 414);
+            this.buttonUpdate.Location = new System.Drawing.Point(122, 373);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(154, 47);
+            this.buttonUpdate.Size = new System.Drawing.Size(122, 47);
             this.buttonUpdate.TabIndex = 28;
             this.buttonUpdate.Text = "UPDATE";
             this.buttonUpdate.UseVisualStyleBackColor = true;
@@ -326,9 +327,9 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(659, 414);
+            this.buttonDelete.Location = new System.Drawing.Point(250, 373);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(129, 47);
+            this.buttonDelete.Size = new System.Drawing.Size(109, 47);
             this.buttonDelete.TabIndex = 29;
             this.buttonDelete.Text = "DELETE";
             this.buttonDelete.UseVisualStyleBackColor = true;
@@ -338,7 +339,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 473);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonUpdate);

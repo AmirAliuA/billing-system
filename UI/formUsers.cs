@@ -44,7 +44,7 @@ namespace billing_system.UI
             bool success = dal.Insert(u);
 
             // if the data is successfully inserted then success -> true ELSE success -> false
-            if(success = true)
+            if(success == true)
             {
                 MessageBox.Show("User successfully created.");
                 Clear();

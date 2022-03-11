@@ -29,5 +29,13 @@ namespace billing_system
         {
             labelLoggedInUsername.Text = formLogin.loggedInUsername;
         }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            formLogin login = new formLogin();
+            login.ShowDialog();
+        }
     }
 }
